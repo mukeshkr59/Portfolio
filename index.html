@@ -1,669 +1,890 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mukesh Kumar Vishwakarma - Backend Developer | Node.js | React | AWS | IIT Kanpur" />
-  <title>Mukesh Kumar Vishwakarma | Backend Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mukesh Kumar Vishwakarma - Backend Developer | Node.js | React | AWS | IIT Kanpur" />
+    <title>Mukesh Kumar Vishwakarma | Backend Developer</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet" />
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">MKV<span class="dot">.</span></a>
 
-  <!-- ===================== NAVBAR ===================== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">MKV<span class="dot">.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <!-- Dark/Light mode toggle -->
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fas fa-sun" id="themeIcon"></i>
-        </button>
-        <!-- Hamburger -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-container">
-      <div class="hero-text fade-in">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Mukesh Kumar<br /><span class="accent">Vishwakarma</span></h1>
-        <p class="hero-title">
-          <span class="typing-wrapper">
-            <span id="typingText"></span><span class="cursor">|</span>
-          </span>
-        </p>
-        <p class="hero-summary">
-          Backend Developer from IIT Kanpur building scalable, high-performance web apps &amp; cloud systems.
-          Sub-100ms APIs · 100M+ blockchain transactions · AWS production deployments.
-        </p>
-        <div class="hero-cta">
-          <a href="assets/Mukesh_Kumar_Vishwakarma_SDE.pdf" download class="btn btn-primary">
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            <i class="fas fa-paper-plane"></i> Contact Me
-          </a>
-        </div>
-        <div class="hero-social">
-          <a href="mailto:mukeshkv.iitk@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/mukeshkr59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <div class="nav-actions">
+          <!-- Dark/Light mode toggle -->
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme">
+            <i class="fas fa-sun" id="themeIcon"></i>
+          </button>
+          <!-- Hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
+    </nav>
 
-      <div class="hero-image fade-in delay-2">
-        <div class="image-frame">
-          <img
-            src="assets/profile.png"
-            alt="Mukesh Kumar Vishwakarma"
-            class="profile-img"
-            onerror="this.style.display='none'; document.querySelector('.img-placeholder').style.display='flex';"
-          />
-          <div class="img-placeholder">
-            <i class="fas fa-user"></i>
-            <span>Add profile.jpg<br/>to /assets/</span>
-          </div>
-        </div>
-        <div class="hero-badge badge-1"><i class="fab fa-node-js"></i> Node.js</div>
-        <div class="hero-badge badge-2"><i class="fab fa-aws"></i> AWS</div>
-        <div class="hero-badge badge-3"><i class="fab fa-react"></i> React</div>
-      </div>
-    </div>
-
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ===================== ABOUT ===================== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">About</span>
-        <h2 class="section-title">Who I Am</h2>
-      </div>
-      <div class="about-grid fade-in">
-        <div class="about-text">
-          <p>
-            I'm a <strong>Backend Developer</strong> and Aerospace Engineering graduate from
-            <strong>IIT Kanpur</strong>, passionate about engineering systems that scale.
-            My work sits at the intersection of clean architecture, high-throughput APIs,
-            and cloud infrastructure.
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-container">
+        <div class="hero-text fade-in">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">
+            Mukesh Kumar<br /><span class="accent">Vishwakarma</span>
+          </h1>
+          <p class="hero-title">
+            <span class="typing-wrapper">
+              <span id="typingText"></span><span class="cursor">|</span>
+            </span>
           </p>
-          <p>
-            I've built real-time MERN applications supporting <strong>300+ concurrent users</strong>,
-            designed REST APIs with <strong>sub-100ms latency</strong>, and engineered data pipelines
-            processing over <strong>100 million blockchain transactions</strong>. I thrive on turning
-            complex backend challenges into elegant, performant solutions.
+          <p class="hero-summary">
+            Backend Developer from IIT Kanpur building scalable,
+            high-performance web apps &amp; cloud systems. Sub-100ms APIs ·
+            100M+ blockchain transactions · AWS production deployments.
           </p>
-          <p>
-            Currently seeking <strong>Backend Developer / SDE-1 opportunities</strong> where I can
-            contribute to building reliable, impactful, production-grade systems.
-          </p>
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-num">300+</span>
-              <span class="stat-label">Concurrent Users</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">100M+</span>
-              <span class="stat-label">Transactions Processed</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">&lt;100ms</span>
-              <span class="stat-label">API Latency</span>
-            </div>
+          <div class="hero-cta">
+            <a
+              href="assets/Mukesh_Kumar_Vishwakarma_SDE.pdf"
+              download
+              class="btn btn-primary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="mailto:mukeshkv.iitk@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/mukeshkr59"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://leetcode.com/u/mukesh_59/"
+              target="_blank"
+              aria-label="LeetCode"
+              ><i class="fas fa-code"></i
+            ></a>
           </div>
         </div>
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fas fa-server"></i></div>
-            <div>
-              <h4>Scalable Backend Systems</h4>
-              <p>Node.js, Express, RESTful APIs, WebSockets, microservices architecture</p>
+
+        <div class="hero-image fade-in delay-2">
+          <div class="image-frame">
+            <img
+              src="assets/profile.png"
+              alt="Mukesh Kumar Vishwakarma"
+              class="profile-img"
+              onerror="
+                this.style.display = 'none';
+                document.querySelector('.img-placeholder').style.display =
+                  'flex';
+              " />
+            <div class="img-placeholder">
+              <i class="fas fa-user"></i>
+              <span>Add profile.jpg<br />to /assets/</span>
             </div>
           </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fab fa-aws"></i></div>
-            <div>
-              <h4>Cloud & DevOps</h4>
-              <p>AWS EC2, Lambda, Elastic Beanstalk, RDS, Redshift, CI/CD pipelines</p>
-            </div>
+          <div class="hero-badge badge-1">
+            <i class="fab fa-node-js"></i> Node.js
           </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fas fa-database"></i></div>
-            <div>
-              <h4>Data Engineering</h4>
-              <p>Apache Airflow DAG pipelines, MongoDB, SQL, real-time analytics dashboards</p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
-            <div>
-              <h4>Full-Stack Capable</h4>
-              <p>React.js frontend, MERN stack, JWT auth, system design, API integration</p>
-            </div>
+          <div class="hero-badge badge-2"><i class="fab fa-aws"></i> AWS</div>
+          <div class="hero-badge badge-3">
+            <i class="fab fa-react"></i> React
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===================== SKILLS ===================== -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Skills</span>
-        <h2 class="section-title">Tech Stack</h2>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
-      <div class="skills-grid fade-in">
+    </section>
 
-        <div class="skill-category">
-          <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag primary">Node.js</span>
-            <span class="skill-tag primary">Express.js</span>
-            <span class="skill-tag primary">REST APIs</span>
-            <span class="skill-tag primary">WebSockets</span>
-            <span class="skill-tag primary">JWT Auth</span>
-            <span class="skill-tag primary">Apache Airflow</span>
-          </div>
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Who I Am</h2>
         </div>
-
-        <div class="skill-category">
-          <h3 class="category-title"><i class="fas fa-paint-brush"></i> Frontend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag secondary">React.js</span>
-            <span class="skill-tag secondary">HTML5</span>
-            <span class="skill-tag secondary">CSS3</span>
-            <span class="skill-tag secondary">JavaScript</span>
-            <span class="skill-tag secondary">Tailwind CSS</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
-          <div class="skill-tags">
-            <span class="skill-tag tertiary">MongoDB</span>
-            <span class="skill-tag tertiary">Atlas</span>
-            <span class="skill-tag tertiary">SQL</span>
-            <span class="skill-tag tertiary">AWS RDS</span>
-            <span class="skill-tag tertiary">AWS Redshift</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="category-title"><i class="fab fa-aws"></i> Cloud & DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag quaternary">AWS EC2</span>
-            <span class="skill-tag quaternary">AWS Lambda</span>
-            <span class="skill-tag quaternary">Elastic Beanstalk</span>
-            <span class="skill-tag quaternary">API Gateway</span>
-            <span class="skill-tag quaternary">CI/CD</span>
-            <span class="skill-tag quaternary">Vercel / Render</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Concepts</h3>
-          <div class="skill-tags">
-            <span class="skill-tag quinary">Git</span>
-            <span class="skill-tag quinary">Data Structure</span>
-            <span class="skill-tag quinary">Algorithm</span>
-            <span class="skill-tag quinary">System Design</span>
-            <span class="skill-tag quinary">Blockchain Analytics</span>
-            <span class="skill-tag quinary">Data Pipelines</span>
-            <span class="skill-tag quinary">Agile</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== EXPERIENCE ===================== -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Experience</span>
-        <h2 class="section-title">Professional Experience</h2>
-      </div>
-      <div class="timeline fade-in">
-
-        <!-- Experience 1 -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-            <div class="marker-line"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="job-title">Backend Developer</h3>
-                <p class="company-name"><i class="fas fa-building"></i> Crypto Owl</p>
+        <div class="about-grid fade-in">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Backend Developer</strong> and Aerospace Engineering
+              graduate from <strong>IIT Kanpur</strong>, passionate about
+              engineering systems that scale. My work sits at the intersection
+              of clean architecture, high-throughput APIs, and cloud
+              infrastructure.
+            </p>
+            <p>
+              I've built real-time MERN applications supporting
+              <strong>300+ concurrent users</strong>, designed REST APIs with
+              <strong>sub-100ms latency</strong>, and engineered data pipelines
+              processing over
+              <strong>100 million blockchain transactions</strong>. I thrive on
+              turning complex backend challenges into elegant, performant
+              solutions.
+            </p>
+            <p>
+              Currently seeking
+              <strong>Backend Developer / SDE-1 opportunities</strong> where I
+              can contribute to building reliable, impactful, production-grade
+              systems.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">300+</span>
+                <span class="stat-label">Concurrent Users</span>
               </div>
-              <span class="job-duration">May 2024 – Aug 2024</span>
-            </div>
-            <ul class="job-achievements">
-              <li>Built and optimized SQL queries analyzing <strong>100M+ blockchain wallet transactions</strong></li>
-              <li>Designed automated <strong>Apache Airflow DAG pipelines</strong> for real-time analytics workflows</li>
-              <li>Integrated <strong>AWS RDS with Redshift</strong> for scalable data warehousing infrastructure</li>
-              <li>Developed <strong>RESTful APIs</strong> using AWS Lambda &amp; API Gateway for serverless architecture</li>
-              <li>Delivered actionable KPIs via dashboards for <strong>crypto wallet intelligence</strong></li>
-              <li>Analyzed influencer engagement impact on token price movements</li>
-            </ul>
-            <div class="job-tags">
-              <span>Node.js</span><span>SQL</span><span>AWS Lambda</span>
-              <span>Airflow</span><span>Redshift</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-            <div class="marker-line"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="job-title">Product Manager</h3>
-                <p class="company-name"><i class="fas fa-building"></i> Techavtar</p>
+              <div class="stat-card">
+                <span class="stat-num">100M+</span>
+                <span class="stat-label">Transactions Processed</span>
               </div>
-              <span class="job-duration">May 2023 – Aug 2023</span>
-            </div>
-            <ul class="job-achievements">
-              <li>Collaborated with engineering teams to define feature roadmaps and technical requirements</li>
-              <li>Conducted requirement analysis and improved workflow efficiency across the org</li>
-              <li>Assisted in product strategy and user research initiatives</li>
-            </ul>
-            <div class="job-tags">
-              <span>Product Strategy</span><span>User Research</span><span>Agile</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience 3 -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-            <div class="marker-line"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <h3 class="job-title">Event Organizer – Football</h3>
-                <p class="company-name"><i class="fas fa-university"></i> UDGHOSH, IIT Kanpur</p>
+              <div class="stat-card">
+                <span class="stat-num">&lt;100ms</span>
+                <span class="stat-label">API Latency</span>
               </div>
-              <span class="job-duration">Jun 2022 – Oct 2022</span>
-            </div>
-            <ul class="job-achievements">
-              <li>Led a <strong>three-tier team of 20+ executives</strong> to manage football event operations</li>
-              <li>Coordinated fixtures for <strong>250+ sportspersons</strong> and 18 referees</li>
-              <li>Co-organized Udghosh National Open School Quiz for <strong>6000+ students</strong></li>
-            </ul>
-            <div class="job-tags">
-              <span>Leadership</span><span>Event Management</span><span>Logistics</span>
             </div>
           </div>
-        </div>
-
-        <!-- Experience 4 -->
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-header">
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-server"></i></div>
               <div>
-                <h3 class="job-title">Senior Executive – Public Relations</h3>
-                <p class="company-name"><i class="fas fa-university"></i> Techkriti, IIT Kanpur</p>
+                <h4>Scalable Backend Systems</h4>
+                <p>
+                  Node.js, Express, RESTful APIs, WebSockets, microservices
+                  architecture
+                </p>
               </div>
-              <span class="job-duration">May 2021 – Apr 2022</span>
             </div>
-            <ul class="job-achievements">
-              <li>Led a team of <strong>6 junior executives</strong> for Techkriti'22 PR initiatives</li>
-              <li>Onboarded renowned speakers and industry personalities for talks and events</li>
-              <li>Managed guest relations, logistics, and accommodations for large-scale events</li>
-            </ul>
-            <div class="job-tags">
-              <span>PR</span><span>Team Leadership</span><span>Communication</span>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fab fa-aws"></i></div>
+              <div>
+                <h4>Cloud & DevOps</h4>
+                <p>
+                  AWS EC2, Lambda, Elastic Beanstalk, RDS, Redshift, CI/CD
+                  pipelines
+                </p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-database"></i></div>
+              <div>
+                <h4>Data Engineering</h4>
+                <p>
+                  Apache Airflow DAG pipelines, MongoDB, SQL, real-time
+                  analytics dashboards
+                </p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div>
+                <h4>Full-Stack Capable</h4>
+                <p>
+                  React.js frontend, MERN stack, JWT auth, system design, API
+                  integration
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== PROJECTS ===================== -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Projects</span>
-        <h2 class="section-title">What I've Built</h2>
-        <p class="section-subtitle">
-          <!--
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skills-grid fade-in">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-server"></i> Backend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Node.js</span>
+              <span class="skill-tag primary">Express.js</span>
+              <span class="skill-tag primary">REST APIs</span>
+              <span class="skill-tag primary">WebSockets</span>
+              <span class="skill-tag primary">JWT Auth</span>
+              <span class="skill-tag primary">Apache Airflow</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-paint-brush"></i> Frontend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag secondary">React.js</span>
+              <span class="skill-tag secondary">HTML5</span>
+              <span class="skill-tag secondary">CSS3</span>
+              <span class="skill-tag secondary">JavaScript</span>
+              <span class="skill-tag secondary">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-database"></i> Databases
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag tertiary">MongoDB</span>
+              <span class="skill-tag tertiary">Atlas</span>
+              <span class="skill-tag tertiary">SQL</span>
+              <span class="skill-tag tertiary">AWS RDS</span>
+              <span class="skill-tag tertiary">AWS Redshift</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fab fa-aws"></i> Cloud & DevOps
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag quaternary">AWS EC2</span>
+              <span class="skill-tag quaternary">AWS Lambda</span>
+              <span class="skill-tag quaternary">Elastic Beanstalk</span>
+              <span class="skill-tag quaternary">API Gateway</span>
+              <span class="skill-tag quaternary">CI/CD</span>
+              <span class="skill-tag quaternary">Vercel / Render</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-tools"></i> Tools & Concepts
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag quinary">Git</span>
+              <span class="skill-tag quinary">Data Structure</span>
+              <span class="skill-tag quinary">Algorithm</span>
+              <span class="skill-tag quinary">System Design</span>
+              <span class="skill-tag quinary">Blockchain Analytics</span>
+              <span class="skill-tag quinary">Data Pipelines</span>
+              <span class="skill-tag quinary">Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <div class="timeline fade-in">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Backend Developer</h3>
+                  <p class="company-name">
+                    <i class="fas fa-building"></i> Crypto Owl
+                  </p>
+                </div>
+                <span class="job-duration">May 2024 – Aug 2024</span>
+              </div>
+              <ul class="job-achievements">
+                <li>
+                  Built and optimized SQL queries analyzing
+                  <strong>100M+ blockchain wallet transactions</strong>
+                </li>
+                <li>
+                  Designed automated
+                  <strong>Apache Airflow DAG pipelines</strong> for real-time
+                  analytics workflows
+                </li>
+                <li>
+                  Integrated <strong>AWS RDS with Redshift</strong> for scalable
+                  data warehousing infrastructure
+                </li>
+                <li>
+                  Developed <strong>RESTful APIs</strong> using AWS Lambda &amp;
+                  API Gateway for serverless architecture
+                </li>
+                <li>
+                  Delivered actionable KPIs via dashboards for
+                  <strong>crypto wallet intelligence</strong>
+                </li>
+                <li>
+                  Analyzed influencer engagement impact on token price movements
+                </li>
+              </ul>
+              <div class="job-tags">
+                <span>Node.js</span><span>SQL</span><span>AWS Lambda</span>
+                <span>Airflow</span><span>Redshift</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Product Manager</h3>
+                  <p class="company-name">
+                    <i class="fas fa-building"></i> Techavtar
+                  </p>
+                </div>
+                <span class="job-duration">May 2023 – Aug 2023</span>
+              </div>
+              <ul class="job-achievements">
+                <li>
+                  Collaborated with engineering teams to define feature roadmaps
+                  and technical requirements
+                </li>
+                <li>
+                  Conducted requirement analysis and improved workflow
+                  efficiency across the org
+                </li>
+                <li>
+                  Assisted in product strategy and user research initiatives
+                </li>
+              </ul>
+              <div class="job-tags">
+                <span>Product Strategy</span><span>User Research</span
+                ><span>Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Event Organizer – Football</h3>
+                  <p class="company-name">
+                    <i class="fas fa-university"></i> UDGHOSH, IIT Kanpur
+                  </p>
+                </div>
+                <span class="job-duration">Jun 2022 – Oct 2022</span>
+              </div>
+              <ul class="job-achievements">
+                <li>
+                  Led a <strong>three-tier team of 20+ executives</strong> to
+                  manage football event operations
+                </li>
+                <li>
+                  Coordinated fixtures for
+                  <strong>250+ sportspersons</strong> and 18 referees
+                </li>
+                <li>
+                  Co-organized Udghosh National Open School Quiz for
+                  <strong>6000+ students</strong>
+                </li>
+              </ul>
+              <div class="job-tags">
+                <span>Leadership</span><span>Event Management</span
+                ><span>Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Senior Executive – Public Relations</h3>
+                  <p class="company-name">
+                    <i class="fas fa-university"></i> Techkriti, IIT Kanpur
+                  </p>
+                </div>
+                <span class="job-duration">May 2021 – Apr 2022</span>
+              </div>
+              <ul class="job-achievements">
+                <li>
+                  Led a team of <strong>6 junior executives</strong> for
+                  Techkriti'22 PR initiatives
+                </li>
+                <li>
+                  Onboarded renowned speakers and industry personalities for
+                  talks and events
+                </li>
+                <li>
+                  Managed guest relations, logistics, and accommodations for
+                  large-scale events
+                </li>
+              </ul>
+              <div class="job-tags">
+                <span>PR</span><span>Team Leadership</span
+                ><span>Communication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">What I've Built</h2>
+          <p class="section-subtitle">
+            <!--
             ===== HOW TO UPDATE PROJECTS =====
             Edit the project cards below in index.html.
             For each project, update: title, description, tech stack, GitHub link, and live demo link.
-          -->
-        </p>
-      </div>
-      <div class="projects-grid fade-in">
-
-        <!-- Project Card 1 — UPDATE WITH YOUR REAL PROJECTS -->
-        <div class="project-card">
-          <div class="project-card-header">
-            <div class="project-icon"><i class="fas fa-link"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/mukeshkr59/Chat-App" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://chat-app-forntend-one.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          --></p>
+        </div>
+        <div class="projects-grid fade-in">
+          <!-- Project Card 1 — UPDATE WITH YOUR REAL PROJECTS -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-link"></i></div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/mukeshkr59/Chat-App"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://chat-app-forntend-one.vercel.app/"
+                  target="_blank"
+                  title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Real-Time Chat Application</h3>
+            <p class="project-desc">
+              A scalable MERN-stack chat app supporting 300+ concurrent users
+              using WebSockets. Implements JWT authentication, room-based
+              messaging, and message persistence.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>React</span><span>MongoDB</span
+              ><span>WebSockets</span><span>JWT</span>
             </div>
           </div>
-          <h3 class="project-title">Real-Time Chat Application</h3>
-          <p class="project-desc">
-            A scalable MERN-stack chat app supporting 300+ concurrent users using WebSockets.
-            Implements JWT authentication, room-based messaging, and message persistence.
-          </p>
-          <div class="project-tech">
-            <span>Node.js</span><span>React</span><span>MongoDB</span><span>WebSockets</span><span>JWT</span>
-          </div>
-        </div>
 
-        <!-- Food delivery -->
-         <div class="project-card">
-          <div class="project-card-header">
-            <div class="project-icon"><i class="fas fa-utensils"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/mukeshkr59/Food-Delivery" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://food-delivery-frontend-ad4o.onrender.com/" target="_blank" title="Live Demo User"><i class="fas fa-external-link-alt"></i></a>
-              <a href="https://food-delivery-admin-2u9c.onrender.com/" target="_blank" title="Live Demo Admin"><i class="fas fa-external-link-alt"></i></a>
+          <!-- Food delivery -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-utensils"></i></div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/mukeshkr59/Food-Delivery"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://food-delivery-frontend-ad4o.onrender.com/"
+                  target="_blank"
+                  title="Live Demo User"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+                <a
+                  href="https://food-delivery-admin-2u9c.onrender.com/"
+                  target="_blank"
+                  title="Live Demo Admin"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Full-Stack MERN Web Application</h3>
+            <p class="project-desc">
+              Production MERN app with <strong>99.9% uptime</strong> and
+              <strong>250+ concurrent users</strong>. Boosted backend
+              performance by <strong>40%</strong> via MongoDB Atlas indexing.
+              Includes admin panel, Stripe payments, JWT auth, and Multer
+              uploads — deployed on Render.
+            </p>
+            <div class="project-tech">
+              <span>MongoDB Atlas</span><span>Express.js</span
+              ><span>React.js</span> <span>Node.js</span><span>JWT</span
+              ><span>Stripe</span><span>Render</span>
             </div>
           </div>
-          <h3 class="project-title">Full-Stack MERN Web Application</h3>
-          <p class="project-desc">
-            Production MERN app with <strong>99.9% uptime</strong> and <strong>250+ concurrent users</strong>. 
-            Boosted backend performance by <strong>40%</strong> via MongoDB Atlas indexing. Includes admin panel, 
-            Stripe payments, JWT auth, and Multer uploads — deployed on Render.
-          </p>
-          <div class="project-tech">
-            <span>MongoDB Atlas</span><span>Express.js</span><span>React.js</span>
-            <span>Node.js</span><span>JWT</span><span>Stripe</span><span>Render</span>
-          </div>
-        </div>
 
-        <!-- blog app -->
-         <div class="project-card">
-  <div class="project-card-header">
-    <div class="project-icon"><i class="fas fa-pen-nib"></i></div>
-    <div class="project-links">
-      <a href="https://github.com/mukeshkr59/Blogify" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="http://blogapp-env.eba-7frbrdna.ap-south-1.elasticbeanstalk.com/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
-  <h3 class="project-title">Blog App</h3>
-  <p class="project-desc">
-    Full-stack blogging platform with real-time CRUD. Reduced high-traffic latency by <strong>30%</strong> 
-    via MongoDB indexing & aggregation, improved security by <strong>40%</strong> with JWT & cookie-based 
-    auth, and cut response time by <strong>20%</strong> — deployed on AWS Elastic Beanstalk.
-  </p>
-  <div class="project-tech">
-    <span>Node.js</span><span>Express</span><span>MongoDB Atlas</span>
-    <span>Mongoose</span><span>JWT</span><span>AWS Elastic Beanstalk</span>
-  </div>
-</div>
-
-
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <div class="project-card-header">
-            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <!-- blog app -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-pen-nib"></i></div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/mukeshkr59/Blogify"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="http://blogapp-env.eba-7frbrdna.ap-south-1.elasticbeanstalk.com/"
+                  target="_blank"
+                  title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Blog App</h3>
+            <p class="project-desc">
+              Full-stack blogging platform with real-time CRUD. Reduced
+              high-traffic latency by <strong>30%</strong> via MongoDB indexing
+              & aggregation, improved security by <strong>40%</strong> with JWT
+              & cookie-based auth, and cut response time by
+              <strong>20%</strong> — deployed on AWS Elastic Beanstalk.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB Atlas</span>
+              <span>Mongoose</span><span>JWT</span
+              ><span>AWS Elastic Beanstalk</span>
             </div>
           </div>
-          <h3 class="project-title">Blockchain Wallet Analytics Pipeline</h3>
-          <p class="project-desc">
-            Data engineering system processing 100M+ blockchain transactions via Apache Airflow DAGs.
-            Integrated AWS RDS &amp; Redshift for scalable warehousing with KPI dashboards.
-          </p>
-          <div class="project-tech">
-            <span>Airflow</span><span>SQL</span><span>AWS RDS</span><span>Redshift</span><span>Python</span>
-          </div>
-        </div>
 
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <div class="project-card-header">
-            <div class="project-icon"><i class="fas fa-cloud"></i></div>
-            <div class="project-links">
-              <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" target="_blank" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Blockchain Wallet Analytics Pipeline</h3>
+            <p class="project-desc">
+              Data engineering system processing 100M+ blockchain transactions
+              via Apache Airflow DAGs. Integrated AWS RDS &amp; Redshift for
+              scalable warehousing with KPI dashboards.
+            </p>
+            <div class="project-tech">
+              <span>Airflow</span><span>SQL</span><span>AWS RDS</span
+              ><span>Redshift</span><span>Python</span>
             </div>
           </div>
-          <h3 class="project-title">Serverless API Platform</h3>
-          <p class="project-desc">
-            Production REST API built on AWS Lambda &amp; API Gateway with sub-100ms latency.
-            Includes auto-scaling, structured logging, error handling, and CI/CD pipeline.
-          </p>
-          <div class="project-tech">
-            <span>AWS Lambda</span><span>API Gateway</span><span>Node.js</span><span>CI/CD</span>
-          </div>
-        </div>
 
-        <!-- Project Card 4 — Add more as needed -->
-        <!-- <div class="project-card project-card-add">
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-cloud"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" target="_blank" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3 class="project-title">Serverless API Platform</h3>
+            <p class="project-desc">
+              Production REST API built on AWS Lambda &amp; API Gateway with
+              sub-100ms latency. Includes auto-scaling, structured logging,
+              error handling, and CI/CD pipeline.
+            </p>
+            <div class="project-tech">
+              <span>AWS Lambda</span><span>API Gateway</span><span>Node.js</span
+              ><span>CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Project Card 4 — Add more as needed -->
+          <!-- <div class="project-card project-card-add">
           <div class="add-project-inner">
             <i class="fas fa-plus-circle"></i>
             <p>New Project</p>
             <span></span>
           </div>
         </div> -->
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== EDUCATION ===================== -->
-  <section class="section education" id="education">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Education</span>
-        <h2 class="section-title">Academic Background</h2>
-      </div>
-      <div class="education-grid fade-in">
-
-        <div class="edu-card featured">
-          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="edu-content">
-            <span class="edu-badge">B.Tech</span>
-            <h3>Aerospace Engineering</h3>
-            <p class="edu-institute">Indian Institute of Technology, Kanpur</p>
-            <p class="edu-duration">Nov 2020 – June 2025</p>
-            <p class="edu-note">One of India's premier technical institutions (IIT). Honed analytical, mathematical, and systems-thinking skills alongside self-taught full-stack development.</p>
-          </div>
         </div>
-
-        <div class="edu-card">
-          <div class="edu-icon"><i class="fas fa-school"></i></div>
-          <div class="edu-content">
-            <span class="edu-badge">12th / Senior Secondary</span>
-            <h3>Mathematics Stream</h3>
-            <p class="edu-institute">Jawahar Navodaya Vidyalaya (JNV)</p>
-            <p class="edu-duration">Apr 2017 – Mar 2019</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-icon"><i class="fas fa-award"></i></div>
-          <div class="edu-content">
-            <span class="edu-badge">Scholarship</span>
-            <h3>Dakshana Foundation Scholar</h3>
-            <p class="edu-institute">Dakshana Foundation</p>
-            <p class="edu-duration">Jul 2017 – Sep 2019</p>
-            <p class="edu-note">Highly competitive scholarship program that selects and trains Navodaya students for IIT-JEE.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
-          <div class="edu-content">
-            <span class="edu-badge">Foundation</span>
-            <h3>CSRL Program</h3>
-            <p class="edu-institute">CSRL</p>
-            <p class="edu-duration">Jul 2019 – Sep 2020</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== CERTIFICATIONS ===================== -->
-  <section class="section certifications" id="certifications">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Certifications</span>
-        <h2 class="section-title">Credentials</h2>
-      </div>
-      <div class="cert-grid fade-in">
-
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-robot"></i></div>
-          <div class="cert-content">
-            <h4>Prompt Engineering with ChatGPT</h4>
-            <p>Advanced prompt design techniques for LLMs including chain-of-thought, few-shot prompting, and system design</p>
-          </div>
-          <div class="cert-badge">AI / ML</div>
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Background</h2>
         </div>
-
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-tools"></i></div>
-          <div class="cert-content">
-            <h4>AI Tools Workshop</h4>
-            <p>Hands-on training with modern AI tools for developer productivity and automation workflows</p>
-          </div>
-          <div class="cert-badge">AI / Tools</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT ===================== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">Open to Backend Developer / SDE-1 opportunities. Feel free to reach out.</p>
-      </div>
-      <div class="contact-grid fade-in">
-
-        <div class="contact-info">
-          <a href="mailto:mukeshkv.iitk@gmail.com" class="contact-link">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <span class="contact-label">Email</span>
-              <span class="contact-value">mukeshkv.iitk@gmail.com</span>
+        <div class="education-grid fade-in">
+          <div class="edu-card featured">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-content">
+              <span class="edu-badge">B.Tech</span>
+              <h3>Aerospace Engineering</h3>
+              <p class="edu-institute">
+                Indian Institute of Technology, Kanpur
+              </p>
+              <p class="edu-duration">Nov 2020 – June 2025</p>
+              <p class="edu-note">
+                One of India's premier technical institutions (IIT). Honed
+                analytical, mathematical, and systems-thinking skills alongside
+                self-taught full-stack development.
+              </p>
             </div>
-          </a>
-          <a href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma" target="_blank" class="contact-link">
-            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <div>
-              <span class="contact-label">LinkedIn</span>
-              <span class="contact-value">mukesh-kumar-vishwakarma</span>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div class="edu-content">
+              <span class="edu-badge">12th / Senior Secondary</span>
+              <h3>Mathematics Stream</h3>
+              <p class="edu-institute">Jawahar Navodaya Vidyalaya (JNV)</p>
+              <p class="edu-duration">Apr 2017 – Mar 2019</p>
             </div>
-          </a>
-          <a href="https://github.com/mukeshkr59" target="_blank" class="contact-link">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div>
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value">@mukesh-github</span>
-              <!-- Update GitHub username above -->
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-award"></i></div>
+            <div class="edu-content">
+              <span class="edu-badge">Scholarship</span>
+              <h3>Dakshana Foundation Scholar</h3>
+              <p class="edu-institute">Dakshana Foundation</p>
+              <p class="edu-duration">Jul 2017 – Sep 2019</p>
+              <p class="edu-note">
+                Highly competitive scholarship program that selects and trains
+                Navodaya students for IIT-JEE.
+              </p>
             </div>
-          </a>
-          <div class="contact-availability">
-            <span class="availability-dot"></span>
-            Available for opportunities
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="edu-content">
+              <span class="edu-badge">Foundation</span>
+              <h3>CSRL Program</h3>
+              <p class="edu-institute">CSRL</p>
+              <p class="edu-duration">Jul 2019 – Sep 2020</p>
+            </div>
           </div>
         </div>
-
-        <!-- Contact Form (Frontend Only) -->
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Hi Mukesh, I'd love to discuss..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary full-width">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-          <p class="form-note" id="formNote"></p>
-        </form>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p class="footer-copy">
-          &copy; <span id="year"></span> Mukesh Kumar Vishwakarma. Designed &amp; Built with <span class="heart">♥</span>
-        </p>
-        <div class="footer-social">
-          <a href="mailto:mukeshkv.iitk@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/mukeshkr59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Certifications</span>
+          <h2 class="section-title">Credentials</h2>
+        </div>
+        <div class="cert-grid fade-in">
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-robot"></i></div>
+            <div class="cert-content">
+              <h4>Prompt Engineering with ChatGPT</h4>
+              <p>
+                Advanced prompt design techniques for LLMs including
+                chain-of-thought, few-shot prompting, and system design
+              </p>
+            </div>
+            <div class="cert-badge">AI / ML</div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-tools"></i></div>
+            <div class="cert-content">
+              <h4>AI Tools Workshop</h4>
+              <p>
+                Hands-on training with modern AI tools for developer
+                productivity and automation workflows
+              </p>
+            </div>
+            <div class="cert-badge">AI / Tools</div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            Open to Backend Developer / SDE-1 opportunities. Feel free to reach
+            out.
+          </p>
+        </div>
+        <div class="contact-grid fade-in">
+          <div class="contact-info">
+            <a href="mailto:mukeshkv.iitk@gmail.com" class="contact-link">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">mukeshkv.iitk@gmail.com</span>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma"
+              target="_blank"
+              class="contact-link">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">mukesh-kumar-vishwakarma</span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/mukeshkr59"
+              target="_blank"
+              class="contact-link">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@mukesh-github</span>
+                <!-- Update GitHub username above -->
+              </div>
+            </a>
+            <div class="contact-availability">
+              <span class="availability-dot"></span>
+              Available for opportunities
+            </div>
+          </div>
+
+          <!-- Contact Form (Frontend Only) -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@company.com"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Job Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Hi Mukesh, I'd love to discuss..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copy">
+            &copy; <span id="year"></span> Mukesh Kumar Vishwakarma. Designed
+            &amp; Built with <span class="heart">♥</span>
+          </p>
+          <div class="footer-social">
+            <a href="mailto:mukeshkv.iitk@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mukesh-kumar-vishwakarma"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/mukeshkr59"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
